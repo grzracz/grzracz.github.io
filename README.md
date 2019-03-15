@@ -1,2 +1,2 @@
 # grzracz.github.io
-Portfolio
+My very own portfolio/CV website. Made with Bootstrap, JQuery and Popper.

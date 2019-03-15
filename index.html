@@ -1,26 +1,98 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Grzegorz Raczek</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-	        	<li><a href="/about">O mnie</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/projects">Projekty</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>O mnie</h1>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:grz.raczek@gmail.com">email</a></li>
-        		<li><a href="https://github.com/grzracz">github.com/grzracz</a></li>
-			</ul>
-		</footer>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <title>Grzegorz Raczek</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/three.r92.min.js"></script>
+    <script type="text/javascript" src="js/vanta.net.min.js"></script>
+
+  <style type="text/css">
+  #vanta-net-background {
+	width: 100%; height: 60%; 
+	position: absolute;
+	left: 0;
+	top: 40%;
+	z-index: -1;
+  }
+  #project-box
+  {
+	position: block;
+	background-color:white;
+	width: 30%;
+	height: 40%;
+	transform: translate(-50%, -50%);
+
+	top: 50%;
+    left: 50%;
+	opacity: 0.9;
+  }
+  #13div
+  {
+	top: 0%;
+	position:absolute;
+	width: 100%;
+	height: 40%;
+  }
+  img.displayed 
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+	}
+  </style>
+
+  <script type="text/javascript">
+    window.onload=function(){
+	VANTA.NET({
+	el: "#vanta-net-background",
+	color: 0x777fff,
+	points: 20.00,
+	maxDistance: 24.00,
+	spacing: 20.00
+	})
+	}
+  </script>
+
+</head>
+<body>
+<div id="13div">
+
+				<!-- side content -->	
+				<div id="project-box" class="text-center row h-40 d-inline">
+						<img src="https://avatars0.githubusercontent.com/u/45147225?v=4" width="200" class="displayed profile-pic img-responsive center-block rounded-circle">
+						<h1>Grzegorz Raczek</h1>
+						<h2>Poland</h2>
+						<h3></h3>
+
+						<div class="text-center" style="margin:20px">
+							<!-- <a href="#" class="cta-icon"><i class="devicon-twitter-plain colored"></i></a> -->
+							<a href="#" class="cta-icon"><i class="devicon-github-plain colored"></i></a>
+						</div>
+				</div>
+
+
+
+
+</div>
+
+<div id="vanta-net-background">
+<div id="project-box" class="rounded text-center">
+	<div class="h-40 row d-inline-block align-middle">
+		<h2><a href="https://github.com/grzracz" target="blank"><br>github.com/grzracz</a></h2> </div>
+		<div class="align-middle">
+			<p>Source files for my projects</p> </div>
+
+		<div>
+			<a class="btn btn-primary align-middle" href="https://github.com/grzracz" target="blank">Launch</a>
+		</div>
+	</div>
+</div>
+</body>
 </html>
+
